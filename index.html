@@ -1,197 +1,390 @@
 <!DOCTYPE html>
-<html lang="tr" data-theme="dark">
+<html lang="en" data-theme="dark">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GUVEZ | Prodüktör & Sanatçı</title>
-    <meta name="description" content="Guvez - Modern trap müzik prodüktörü ve sanatçı. Özgün sound ve benzersiz prodüksiyonlar.">
-    <link rel="icon" type="image/svg+xml" href="logo.svg">
-    <link rel="alternate icon" href="logo.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Minmoy Gondhia | Sound Designer | Music Producer</title>
+
+<meta name="description"
+content="Minmoy Gondhia — Sound Designer, Music Producer and Audio Post-Production Engineer">
+
+<link rel="icon" href="logo.svg">
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+rel="stylesheet">
+
+<style>
+
+.track img.cover{
+width:100%;
+height:220px;
+object-fit:cover;
+border-radius:18px;
+margin-bottom:14px;
+}
+
+.brandlogo{
+height:55px;
+width:auto;
+margin-bottom:15px;
+object-fit:contain;
+background:#0f0f0f;
+padding:8px;
+border-radius:10px;
+}
+
+.hero-image img{
+width:100%;
+border-radius:24px;
+box-shadow:0 0 80px rgba(160,100,255,.25);
+}
+
+audio{
+width:100%;
+margin-top:15px;
+}
+
+video{
+width:100%;
+border-radius:20px;
+margin-top:20px;
+}
+
+.track{
+padding:22px;
+border-radius:22px;
+backdrop-filter:blur(12px);
+}
+
+.about-text{
+font-size:18px;
+line-height:1.8;
+}
+
+.music h2,
+.about h2,
+.contact h2{
+margin-bottom:40px;
+}
+
+</style>
+
 </head>
+
 <body>
-    <!-- Navigation -->
-    <nav>
-        <div class="nav-content">
-            <div class="logo">GUVEZ</div>
-            <button class="mobile-menu-btn">
-                <i class="fas fa-bars"></i>
-            </button>
-            <div class="nav-links">
-                <a href="#music">MÜZİK</a>
-                <a href="#about">HAKKIMDA</a>
-                <a href="#contact">İLETİŞİM</a>
-            </div>
-            <button class="theme-toggle">
-                <i class="fas fa-moon"></i>
-            </button>
-        </div>
-    </nav>
 
-    <!-- Scroll indikatörü -->
-    <div class="scroll-progress"></div>
+<nav>
+<div class="nav-content">
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="animated-background">
-            <div class="floating-element" data-speed="1"></div>
-            <div class="floating-element" data-speed="2"></div>
-            <div class="floating-element" data-speed="3"></div>
-            <div class="floating-element" data-speed="2"></div>
-            <div class="floating-element" data-speed="1"></div>
-            <div class="floating-note">♪</div>
-            <div class="floating-note">♫</div>
-            <div class="floating-note">♬</div>
-        </div>
-        <div class="wave-animation"></div>
-        <div class="hero-content">
-            <div class="hero-left">
-                <div class="artist-info">
-                    <h1>GUVEZ</h1>
-                    <p>Sanatçı, Müzik Prodüktörü</p>
-                    <div class="social-links">
-                        <a href="https://open.spotify.com/artist/79tejAQLRrqU5y80qNUc3D" target="_blank" class="spotify-link">
-                            <i class="fab fa-spotify"></i>
-                            <span class="tooltip">Spotify</span>
-                        </a>
-                        <a href="https://www.instagram.com/guvez_m/" target="_blank" class="instagram-link">
-                            <i class="fab fa-instagram"></i>
-                            <span class="tooltip">Instagram</span>
-                        </a>
-                        <a href="https://on.soundcloud.com/DK1TiaeVPuVBf3QZA" target="_blank" class="soundcloud-link">
-                            <i class="fab fa-soundcloud"></i>
-                            <span class="tooltip">SoundCloud</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="hero-right">
-                <div class="latest-track">
-                    <span class="tag">YENİ ÇIKAN</span>
-                    <iframe style="border-radius:12px" 
-                        src="https://open.spotify.com/embed/track/6bIhRvtKlxCnDGMOagLiTk?utm_source=generator&theme=0" 
-                        width="100%" 
-                        height="152" 
-                        frameBorder="0" 
-                        allowfullscreen="" 
-                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
-                        loading="lazy">
-                    </iframe>
-                </div>
-            </div>
-        </div>
-    </section>
+<div class="logo">
+MINMOY
+</div>
 
-    <!-- Hero section'a 3D katmanlar ekleyelim -->
-    <div class="hero-layers">
-        <div class="layer" data-speed="0.1"></div>
-        <div class="layer" data-speed="0.2"></div>
-        <div class="layer" data-speed="0.3"></div>
-    </div>
+<button class="mobile-menu-btn">
+<i class="fas fa-bars"></i>
+</button>
 
-    <!-- Müzik dalgası için canvas ekleyelim -->
-    <canvas id="waveCanvas"></canvas>
+<div class="nav-links">
+<a href="#music">Music</a>
+<a href="#post">Post Production</a>
+<a href="#visual">Visual</a>
+<a href="#about">About</a>
+<a href="#contact">Contact</a>
+</div>
 
-    <!-- Music Section -->
-    <section id="music" class="music">
-        <div class="animated-background">
-            <div class="floating-element" data-speed="1"></div>
-            <div class="floating-element" data-speed="2"></div>
-            <div class="floating-element" data-speed="3"></div>
-            <div class="floating-note">♪</div>
-            <div class="floating-note">♫</div>
-        </div>
-        <div class="wave-animation"></div>
-        <h2>MÜZİK</h2>
-        <div class="music-container">
-            <div class="track-list">
-                <div class="track">
-                    <div class="track-inner">
-                        <iframe style="border-radius:12px" 
-                            src="https://open.spotify.com/embed/track/6FTOdFrG9ayalweTDePu2L?utm_source=generator&theme=0" 
-                            width="100%" 
-                            height="152" 
-                            frameBorder="0" 
-                            allowfullscreen="" 
-                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
-                            loading="lazy">
-                        </iframe>
-                    </div>
-                </div>
-                <div class="track">
-                    <div class="track-inner">
-                        <iframe style="border-radius:12px" 
-                            src="https://open.spotify.com/embed/track/6bIhRvtKlxCnDGMOagLiTk?utm_source=generator&theme=0" 
-                            width="100%" 
-                            height="152" 
-                            frameBorder="0" 
-                            allowfullscreen="" 
-                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
-                            loading="lazy">
-                        </iframe>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+<button class="theme-toggle">
+<i class="fas fa-moon"></i>
+</button>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="animated-background">
-            <div class="floating-element" data-speed="2"></div>
-            <div class="floating-element" data-speed="1"></div>
-            <div class="floating-element" data-speed="3"></div>
-            <div class="floating-note">♬</div>
-            <div class="floating-note">♪</div>
-        </div>
-        <div class="wave-animation"></div>
-        <h2>HAKKIMDA</h2>
-        <div class="about-content">
-            <div class="about-text">
-                <p>Guvez, müzik dünyasında kendi yolunu çizen ve tüm prodüksiyon süreçlerini tek başına yöneten bir sanatçı olarak dikkat çekiyor. Çocukluk yıllarında müziğe olan ilgisini keşfeden Guvez, yaklaşık 6-7 yıldır zaman zaman prodüktörlük yaparak yeteneklerini geliştirdi. Müzik kariyerinde özellikle Juice WRLD, Lil Uzi Vert, Young Thug gibi yabancı rap sanatçılarından ve yerli sahneden Khontkar, Lil Zey, BEGE gibi sanatçılardan ilham alarak, instrumental trap türünde kendi özgün sound'unu oluşturdu.</p>
-            </div>
-        </div>
-    </section>
+</div>
+</nav>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="animated-background">
-            <div class="floating-element" data-speed="1"></div>
-            <div class="floating-element" data-speed="3"></div>
-            <div class="floating-element" data-speed="2"></div>
-            <div class="floating-note">♫</div>
-            <div class="floating-note">♬</div>
-        </div>
-        <div class="wave-animation"></div>
-        <h2>İLETİŞİM</h2>
-        <div class="contact-content">
-            <a href="mailto:prodbyguvez@gmail.com" class="contact-btn">
-                <i class="fas fa-envelope"></i>
-                prodbyguvez@gmail.com
-            </a>
-            <div class="social-links">
-                <a href="https://www.instagram.com/guvez_m/" target="_blank" class="instagram-link">
-                    <i class="fab fa-instagram"></i>
-                    <span class="tooltip">Instagram</span>
-                </a>
-                <a href="https://open.spotify.com/artist/79tejAQLRrqU5y80qNUc3D" target="_blank" class="spotify-link">
-                    <i class="fab fa-spotify"></i>
-                    <span class="tooltip">Spotify</span>
-                </a>
-                <a href="https://on.soundcloud.com/DK1TiaeVPuVBf3QZA" target="_blank" class="soundcloud-link">
-                    <i class="fab fa-soundcloud"></i>
-                    <span class="tooltip">SoundCloud</span>
-                </a>
-            </div>
-        </div>
-    </section>
 
-    <footer>
-        <p>&copy; 2024 GUVEZ</p>
-    </footer>
 
-    <script src="script.js"></script>
+<section id="home" class="hero">
+
+<div class="animated-background">
+
+<div class="floating-element" data-speed="1"></div>
+<div class="floating-element" data-speed="2"></div>
+<div class="floating-element" data-speed="3"></div>
+
+<div class="floating-note">♪</div>
+<div class="floating-note">♫</div>
+<div class="floating-note">♬</div>
+
+</div>
+
+<div class="wave-animation"></div>
+
+<div class="hero-content">
+
+<div class="hero-left">
+
+<div class="artist-info">
+
+<h1>MINMOY GONDHIA</h1>
+
+<p>
+Sound Designer | Music Producer |
+Audio Post-Production Engineer
+</p>
+
+<p>
+Crafting immersive audio experiences through
+storytelling, music production and sound design.
+</p>
+
+<div class="social-links">
+
+<a href="https://www.instagram.com/minmoy.wav/"
+target="_blank">
+<i class="fab fa-instagram"></i>
+</a>
+
+<a href="https://www.linkedin.com/in/minmoy-g-912506112/"
+target="_blank">
+<i class="fab fa-linkedin"></i>
+</a>
+
+<a href="mailto:Gondhiaminmoy2131327@gmail.com">
+<i class="fas fa-envelope"></i>
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="hero-right">
+
+<div class="hero-image">
+
+<img src="hero.jpg">
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<section id="music" class="music">
+
+<h2>MUSIC PRODUCTION</h2>
+
+<div class="music-container">
+<div class="track-list">
+
+<div class="track">
+
+<img src="backcover.jpg" class="cover">
+
+<h3>Back To You — Remix</h3>
+
+<p>
+A remix project showcasing arrangement choices,
+musical interpretation and production workflow.
+</p>
+
+<audio controls>
+<source src="back to you remix.mp3">
+</audio>
+
+</div>
+
+
+<div class="track">
+
+<img src="flycover.jpg" class="cover">
+
+<h3>Fly</h3>
+
+<p>
+Original music production demonstrating
+composition, mixing and emotional storytelling.
+</p>
+
+<audio controls>
+<source src="fly.mp3">
+</audio>
+
+</div>
+
+</div>
+</div>
+
+</section>
+
+
+
+<section id="post" class="music">
+
+<h2>AUDIO POST-PRODUCTION</h2>
+
+<div class="track-list">
+
+
+<div class="track">
+
+<img src="pocket.png" class="brandlogo">
+
+<h3>PocketFM</h3>
+
+<p>
+Dialogue cleanup, sound design,
+ambience layering and mastering.
+</p>
+
+<audio controls>
+<source src="pocketfm audiostory final output.mp3">
+</audio>
+
+</div>
+
+
+<div class="track">
+
+<img src="kuku.png" class="brandlogo">
+
+<h3>KukuFM</h3>
+
+<p>
+Narrative enhancement and immersive
+listener experience workflow.
+</p>
+
+<audio controls>
+<source src="kukufm audiostory final output.mp3">
+</audio>
+
+</div>
+
+
+
+<div class="track">
+
+<img src="elevenlabs.png" class="brandlogo">
+
+<h3>ElevenLabs Narration</h3>
+
+<p>
+AI narration generation integrated into
+full post-production workflow.
+</p>
+
+<audio controls>
+<source src="elevenlabs audio.mp3">
+</audio>
+
+</div>
+
+
+
+<div class="track">
+
+<h3>Audio Story Showcase</h3>
+
+<p>
+Long-form storytelling, atmosphere design
+and emotional pacing.
+</p>
+
+<audio controls>
+<source src="Audiostory portfolio.mp3">
+</audio>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<section id="visual" class="music">
+
+<h2>MERCEDES GLS REWORK</h2>
+
+<p>
+Visual + audio rework showcasing sound design,
+music selection and cinematic editing.
+</p>
+
+<video controls>
+
+<source src="mercedes GLS sound design and sfx rework .mp4">
+
+</video>
+
+</section>
+
+
+
+<section id="about" class="about">
+
+<h2>ABOUT</h2>
+
+<div class="about-content">
+
+<div class="about-text">
+
+<p>
+
+I'm a sound designer, music producer and
+audio post-production engineer passionate
+about creating immersive emotional experiences.
+
+Previously worked on PocketFM projects
+reaching millions of listeners worldwide.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<section id="contact" class="contact">
+
+<h2>CONTACT</h2>
+
+<div class="contact-content">
+
+<a href="mailto:Gondhiaminmoy2131327@gmail.com"
+class="contact-btn">
+
+<i class="fas fa-envelope"></i>
+
+Gondhiaminmoy2131327@gmail.com
+
+</a>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>
+© Minmoy Gondhia
+</p>
+
+</footer>
+
+<script src="script.js"></script>
+
 </body>
-</html> 
+</html>
